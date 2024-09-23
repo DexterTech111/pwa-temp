@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with your frontend's domain
+    origin: '*', // Replace with your frontend's domain
     methods: 'GET,POST,PUT,DELETE',
     credentials: true,}
 ));
@@ -75,7 +75,7 @@ app.post('/check-pin', async (req, res) => {
 
 ////
 ////
-/*
+
 // Serve static files from the "client/dist" directory
 app.use(express.static(path.join(__dirname, 'dist')));
 
@@ -83,7 +83,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 });
-*/
+
 ////
 ////
 

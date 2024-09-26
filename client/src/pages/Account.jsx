@@ -6,12 +6,12 @@ const Account = () => {
   const user = JSON.parse(localStorage.getItem('user'));
 
   return (
-    <div className="mb-20 flex flex-col items-center p-8 justify-start min-h-screen bg-white relative min-w-fit border">
+    <div className="mb-20 flex flex-col items-center p-6 justify-start min-h-screen bg-white relative  border">
        <div className="absolute top-0 left-0 w-full h-2/5 bg-cover bg-no-repeat" style={{ backgroundImage: "url('/assets/images/noback.png')" }}>
        </div>
        
        
-       <div className="rounded-lg w-full max-w-md  pt-0  bg-transparent flex justify-start items-center flex-col  z-8 ">
+       <div className="rounded-lg w-full   pt-0  bg-transparent flex justify-start items-center flex-col  z-8 ">
       
         <Typography variant="h4" color="blue" className="font-bold text-primary z-10 ">
           Covered Club

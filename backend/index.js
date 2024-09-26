@@ -13,7 +13,7 @@ app.use(cors({
 ));
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/mern-pwa', {
+mongoose.connect('mongodb+srv://preshitech111:CIjL8FqW225m99Im@cluster-confluencedb.lycpcuc.mongodb.net/users', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
